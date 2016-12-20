@@ -37,7 +37,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 263);
+            this.textBox1.Size = new System.Drawing.Size(458, 413);
             this.textBox1.TabIndex = 0;
             // 
             // ChildForm
@@ -45,7 +45,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(283, 263);
+            this.ClientSize = new System.Drawing.Size(458, 413);
             this.Controls.Add(this.textBox1);
             this.Name = "ChildForm";
             this.Text = "ChildForm";
@@ -59,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.TextBox textBox1;
     }
 }
