@@ -36,7 +36,10 @@ namespace MDIForms_8
                 closeAllMenu.Enabled = true;
                 string filepath = ofd.FileName;
                 if (!File.Exists(filepath))
-                File.Create(filepath);
+                {
+                    FileStream fs = File.Create(filepath);
+                    fs.Close();
+                }
                 bool dup = false;
                 foreach (Form f in this.MdiChildren)
                     if (f.Text == filepath)
